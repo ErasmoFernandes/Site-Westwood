@@ -128,7 +128,7 @@ nav a.active {
 .s2 { animation-delay: 5s; }
 .s3 { animation-delay: 10s; }
 .s4 { animation-delay: 15s; }
-.s5 { animation-delay: 20s; }
+.s5 { animation-delay: 25s; }
 
 /* ANIMATION */
 @keyframes fade {
