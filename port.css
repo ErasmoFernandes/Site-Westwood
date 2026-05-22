@@ -490,3 +490,110 @@ body::before {
     justify-content: center;
   }
 }
+
+/* ===== CORREÇÃO GERAL PARA CELULAR ===== */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.footer {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-top: 155px;
+  }
+
+  .top-text {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 85px;
+    top: 48px;
+    left: -5px;
+  }
+
+  header,
+  .main-header {
+    top: 45px;
+    left: 0;
+  }
+
+  nav {
+    top: 95px;
+    left: 0;
+    transform: none;
+    width: 100%;
+    padding: 0 12px;
+    gap: 22px;
+    overflow-x: auto;
+    justify-content: flex-start;
+    white-space: nowrap;
+  }
+
+  nav a {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .nav-icons {
+    top: 58px;
+    right: 12px;
+    gap: 16px;
+  }
+
+  .nav-icons i {
+    font-size: 20px;
+  }
+
+  body::before {
+    top: 45px;
+    height: 115px;
+  }
+}
+
+/* ===== PORTFÓLIO RESPONSIVO ===== */
+@media (max-width: 600px) {
+  .portfolio {
+    margin-top: 120px;
+  }
+
+  .portfolio-hero {
+    height: auto;
+    padding: 60px 25px;
+  }
+
+  .portfolio-hero h1 {
+    font-size: 46px;
+    letter-spacing: 1px;
+  }
+
+  .portfolio-hero p {
+    font-size: 14px;
+  }
+
+  .projetos,
+  .depoimentos {
+    grid-template-columns: 1fr;
+    padding: 40px 25px;
+  }
+
+  .projetos-texto h2,
+  .depo-title h2 {
+    font-size: 30px;
+  }
+
+  .projeto-card img {
+    height: 220px;
+  }
+
+  .depo-card {
+    border-left: none;
+    border-top: 1px solid #999;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}

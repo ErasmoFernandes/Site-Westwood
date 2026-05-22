@@ -932,3 +932,170 @@ body::before {
     justify-content: center;
   }
 }
+
+/* ===== CORREÇÃO GERAL PARA CELULAR ===== */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.footer {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-top: 155px;
+  }
+
+  .top-text {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 85px;
+    top: 48px;
+    left: -5px;
+  }
+
+  header,
+  .main-header {
+    top: 45px;
+    left: 0;
+  }
+
+  nav {
+    top: 95px;
+    left: 0;
+    transform: none;
+    width: 100%;
+    padding: 0 12px;
+    gap: 22px;
+    overflow-x: auto;
+    justify-content: flex-start;
+    white-space: nowrap;
+  }
+
+  nav a {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .nav-icons {
+    top: 58px;
+    right: 12px;
+    gap: 16px;
+  }
+
+  .nav-icons i {
+    font-size: 20px;
+  }
+
+  body::before {
+    top: 45px;
+    height: 115px;
+  }
+}
+
+/* ===== HOME RESPONSIVO ===== */
+@media (max-width: 600px) {
+  .slider {
+    height: 480px;
+    margin-top: 0;
+  }
+
+  .bg-text {
+    font-size: 110px;
+    letter-spacing: 6px;
+  }
+
+  .slide {
+    height: 70%;
+    top: 48%;
+  }
+
+  .hero-main {
+    left: 22px;
+    bottom: 75px;
+    width: 90%;
+  }
+
+  .hero-main h2 {
+    font-size: 26px;
+    letter-spacing: 4px;
+  }
+
+  .hero-main p {
+    font-size: 16px;
+  }
+
+  .hero-side {
+    display: none;
+  }
+
+  .shop-btn {
+    padding: 14px 26px;
+    font-size: 15px;
+  }
+
+  .search-elite {
+    width: 70px;
+    height: 55px;
+    margin: 25px auto;
+  }
+
+  .search-elite:hover {
+    width: 90%;
+  }
+
+  .features {
+    height: auto;
+    margin-top: 20px;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .feature:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding-right: 0;
+    padding-bottom: 15px;
+  }
+
+  .categories-grid,
+  .produtos-grid,
+  .insta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .produtos {
+    padding: 25px;
+  }
+
+  .produtos-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .banner {
+    margin: 30px 20px;
+    height: 250px;
+    border-radius: 25px;
+  }
+
+  .banner-content {
+    left: 25px;
+    right: 25px;
+  }
+
+  .banner-content h2 {
+    font-size: 28px;
+  }
+}

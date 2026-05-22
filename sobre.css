@@ -454,3 +454,67 @@ main {
     justify-content: center;
   }
 }
+
+/* ===== CORREÇÃO GERAL PARA CELULAR ===== */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.footer {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-top: 155px;
+  }
+
+  .top-text {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 85px;
+    top: 48px;
+    left: -5px;
+  }
+
+  header,
+  .main-header {
+    top: 45px;
+    left: 0;
+  }
+
+  nav {
+    top: 95px;
+    left: 0;
+    transform: none;
+    width: 100%;
+    padding: 0 12px;
+    gap: 22px;
+    overflow-x: auto;
+    justify-content: flex-start;
+    white-space: nowrap;
+  }
+
+  nav a {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .nav-icons {
+    top: 58px;
+    right: 12px;
+    gap: 16px;
+  }
+
+  .nav-icons i {
+    font-size: 20px;
+  }
+
+  body::before {
+    top: 45px;
+    height: 115px;
+  }
+}
